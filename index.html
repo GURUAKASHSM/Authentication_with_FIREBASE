@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+        integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-left: 90px;
+        }
+
+        input {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 100px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            margin-left: 100px;
+
+        }
+
+        .css-box {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 400px;
+        }
+
+        .js-image {
+            height: 300px;
+            width: 300px;
+            margin-left: 100px;
+        }
+
+        p {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Email : </label><input type="text" class="js-email">
+    <label>Password : </label><input type="text" class="js-password">
+    <label>Username :</label><input type="text" class="js-username">
+    <label>Ph no :</label><input type="text" class="js-no">
+    <button class="js-registerbutton">Register</button>
+    <a href="./SIGNIN_FIREBASE.html">Already have an account</a>
+    <script type="module">
+       const x=V;(function(I,M){const E=V,L=I();while(!![]){try{const p=parseInt(E(0x1bf))/0x1*(-parseInt(E(0x1b3))/0x2)+parseInt(E(0x1c2))/0x3*(-parseInt(E(0x1b2))/0x4)+parseInt(E(0x1c3))/0x5*(-parseInt(E(0x1be))/0x6)+-parseInt(E(0x1bb))/0x7+parseInt(E(0x1c0))/0x8*(-parseInt(E(0x1c1))/0x9)+parseInt(E(0x1b7))/0xa*(parseInt(E(0x1c6))/0xb)+parseInt(E(0x1b5))/0xc*(parseInt(E(0x1b4))/0xd);if(p===M)break;else L['push'](L['shift']());}catch(U){L['push'](L['shift']());}}}(u,0x6324d));const email=document[x(0x1bd)]('.js-email'),password=document[x(0x1bd)](x(0x1b6)),username=document[x(0x1bd)](x(0x1b0)),no=document[x(0x1bd)](x(0x1ba)),registerButton=document[x(0x1bd)]('.js-registerbutton');function V(C,I){const M=u();return V=function(L,p){L=L-0x1a9;let U=M[L];return U;},V(C,I);}registerButton[x(0x1b8)]('click',()=>{RegisterUser();});import{initializeApp}from'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';import{getAnalytics}from'https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js';import{getStorage,ref as C,uploadBytesResumable,getDownloadURL}from'https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js';import{getDatabase,ref,set,get,child,update,remove,onValue}from'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';import{getAuth,createUserWithEmailAndPassword}from'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';function u(){const i=['then','.js-no','3390373wdWwmF','LoginCredentials/','querySelector','24PmcpYj','92956xFaKfI','70776DjnTxf','45akvBUh','1236JWmVCe','856535nMUItZ','https://avian-pact-378003-default-rtdb.asia-southeast1.firebasedatabase.app','log','11NhHIoa','User\x20Registered\x20Successfully','catch','Error\x20registering\x20user:\x20','1:960981261075:web:0eea8a286549efc5f058e6','G-LPBMBH2TFM','message','AIzaSyCBQSAtCbq6-QWo0UCU2R1G4t-f5OQKw1k','avian-pact-378003','code','.js-username','value','5756SMHTlf','10wRkKRH','130HhUKhH','3107904LfgbHG','.js-password','876230cfQHBQ','addEventListener'];u=function(){return i;};return u();}const firebaseConfig={'apiKey':x(0x1ad),'authDomain':'avian-pact-378003.firebaseapp.com','databaseURL':x(0x1c4),'projectId':x(0x1ae),'storageBucket':'avian-pact-378003.appspot.com','messagingSenderId':'960981261075','appId':x(0x1aa),'measurementId':x(0x1ab)},app=initializeApp(firebaseConfig),analytics=getAnalytics(app),db=getDatabase(),auth=getAuth(app);let RegisterUser=I=>{const G=x;createUserWithEmailAndPassword(auth,email[G(0x1b1)],password[G(0x1b1)])[G(0x1b9)](M=>{const Z=G;alert(Z(0x1c7)),set(ref(db,Z(0x1bc)+username[Z(0x1b1)]),{'UserName':username[Z(0x1b1)],'Email':email[Z(0x1b1)],'Phone_No':no['value']})[Z(0x1b9)](()=>{const X=Z;username[X(0x1b1)]='',password[X(0x1b1)]='',email[X(0x1b1)]='',no[X(0x1b1)]='';})[Z(0x1c8)](L=>{alert(L);});})[G(0x1c8)](M=>{const J=G;alert(J(0x1a9)+M[J(0x1ac)]),console[J(0x1c5)](M[J(0x1af)]),console[J(0x1c5)](M[J(0x1ac)]);});};
+    </script>
+
+</body>
+
+</html>
